@@ -1,0 +1,32 @@
+{
+    "roles": {
+        "member": [],
+        "student": ["member"],
+        "teacher": ["member"],
+        "junior-student": ["student"]
+    },
+    "allow": [
+        {
+            "role": "member",
+            "operation": "view",
+            "resource": "course"
+        },
+        {
+            "role": "student",
+            "operation": "learn",
+            "resource": "course"
+        },
+        {
+            "role": "teacher",
+            "operation": "teach",
+            "resource": "course"
+        }
+    ],
+    "deny": [
+        {
+            "role": "junior-student",
+            "operation": "learn",
+            "resource": "senior-course"
+        }
+    ]
+}

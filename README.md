@@ -1,0 +1,1 @@
+Support for loading and reload simple-rbac rules from json config files.
